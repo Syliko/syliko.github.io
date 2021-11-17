@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.menu{
+    background-image: url(../images/bg.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.menu1{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu1 li{
+    float:left;
+    font-style: italic;
+    padding: 15px;
+    margin: 10px;
+    font-size: 30px;
+}
+.menu1 > li:hover {
+    background: yellow;
+    cursor: pointer;
+}
+
+.menu2 {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.menu3 {
+    display: none;
+}
+
+.menu2 li{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+.menu2 > li:hover {
+    background: yellow;
+    cursor: pointer;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ab_im{
+    float: left;
+    width: 48%; 
+    height: 450px; 
+    margin: 10px;
+}
+.ab_im img{
+    width: 100%;
+    height: 100%;
+}
+
+.ab_txt{
+    float: right;
+    width: 48%; 
+    height: 450px;
+    margin: 10px;
+}
+
+.ab {
+    font-size: 20px;
+    font-style: italic;
+}
+.col {
+    text-transform: uppercase;
+}
+
+.edu{
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 1%;
+    color: white;
+    width: 40%;
+    float: left;
+}
+
+td, th {
+    background: green;
+    padding: 5px;
+   }
+
+.nav{
+    padding-top: 15px;
+    margin-left: 1%;
+    clear: left;
+    color: white;
+}
+.exp {
+    text-align: center;
+     border: 1px solid black;
+    float:right;
+     margin-right: 4%;
+    color: white;
+    width: 40%;
+}
+
+.kval{
+    padding: 10px;
+    margin-left: 1%; 
+    color: blue;
+    
+}
+h3 {
+    text-align: center;
+    color: darkgoldenrod;
+}
+.count {
+    list-style: none;
+    font-size: 24px;
+    padding: 5px;
+    color: darkmagenta;
+}
+
+.count > li {
+    padding: 5px;
+    text-align: center;
+}
+
+.count > li i {
+    font-size: 24px;
+    list-style: none;
+}
+
+
+.count > li:hover i {
+    -webkit-transform: rotateZ(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotateZ(360deg);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: blue;
+    cursor: pointer;
+}
+
+.count > li:hover span {
+    background: white;
+    cursor: pointer;
+    color: blue;
+}
+
+@media (max-width: 1024px){
+    .ab_im {
+    height: 350px;
+        width: 40%;
+    margin: 5px;
+    }
+}
+
+@media (max-width: 680px){
+    .ab_im {
+    height: 250px;
+        width: 40%;
+    margin: 5px;
+    }
+    .ab_txt h2{
+        font-size: 15px;
+    }
+    .ab, .col{
+    font-size: 15px;
+    }
+    .edu, .exp{
+    width: 25%;
+    font-size: 15px;
+    }
+    .nav{
+    padding-top: 10px;
+    }
+    .kval{
+    padding: 5px;
+    }
+}
+
+@media (max-width: 500px){
+    .ab_im{
+        width: 90%;
+    }
+    .ab_txt{
+        width: 90%;
+        float: none;
+    }
+    .edu, .exp{
+    float:none;
+    width: 90%;
+    border:none;
+    margin:auto;
+    }
+    .exp caption, .edu caption{
+    padding-top: 5%;
+    }
+    .nav{
+    margin-left: 10%;
+        
+    }
+    
+    .menu3 {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    }
+    
+    .menu2 li{
+    padding: 7px;
+    margin: 7px;
+    font-size: 15px;
+}
+    .menu3 li{
+    padding: 7px;
+    margin: 7px;
+    font-size: 18px;
+}
+    .menu3 > li:hover {
+    background: white;
+    cursor: pointer;
+}
+}
